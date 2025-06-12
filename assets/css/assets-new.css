@@ -55,7 +55,7 @@
 .asset-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  border-color: #e75e8d;
+  border-color: #c5412b;
 }
 
 .asset-item.d-none {

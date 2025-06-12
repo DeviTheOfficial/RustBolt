@@ -484,13 +484,13 @@ Header Style
 
 .header-area .main-nav .nav li:last-child:hover a,
 .header-area .main-nav .nav li:last-child a.active {
-  color: #fff !important;
+  color: #1f2122 !important;
   background-color: #c5412b !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fff;
+  color: #1f2122;
   opacity: 1;
 }
 
@@ -586,7 +586,7 @@ Header Style
 .header-area .main-nav .menu-trigger.active span,
 .header-area .main-nav .menu-trigger.active span:before,
 .header-area .main-nav .menu-trigger.active span:after {
-  background-color: transparent;
+  background-color: #1f2122;
   width: 100%;
 }
 
@@ -637,7 +637,7 @@ Header Style
     top: 0;
   }
   .header-area .main-nav {
-    background-color: transparent;
+    background-color: #1f2122;
     border-radius: 0px;
   }
   .header-area .main-nav .nav {
@@ -669,7 +669,7 @@ Header Style
     width: 100%;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background-color: #1f2122;
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
@@ -1880,4 +1880,83 @@ ul.custom-list li::marker {
   color: #c9ddff !important;
 }
 
+@media (max-width: 767.98px) {
+  .header-area.background-header {
+    background-color: #1f2122 !important;
+  }
+}
 
+@media (max-width: 992px) {
+  /* 1) Make the menu container solid dark with no rounding */
+  .header-area .main-nav .nav {
+    background-color: #1f2122 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 2) Kill any per-item white backgrounds and corners */
+  .header-area .main-nav .nav li,
+  .header-area .main-nav .nav li a {
+    background: transparent !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* 3) Ensure each link is still full-width, tappable, and white text */
+  .header-area .main-nav .nav li a {
+    display: block !important;
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+    color: #fff !important;
+  }
+
+  /* 4) Subtle separator—optional */
+  .header-area .main-nav .nav li + li {
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+  }
+
+  /* 5) Hover state */
+  .header-area .main-nav .nav li a:hover {
+    background-color: rgba(255,255,255,0.05) !important;
+    color: #e94e1b !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Center the “Browse Assets” heading */
+  .heading-section h4 {
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Make the pills container use flex-center and wrap */
+  #assetsTab {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Tidy up each pill: auto-width, centered text */
+  #assetsTab .nav-item {
+    flex: 0 1 auto !important;
+  }
+  #assetsTab .nav-link {
+    display: block !important;
+    text-align: center !important;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Index page: add top pad inside the Features box */
+  .most-popular {
+    padding-top: 2rem !important;
+  }
+
+  /* Assets page: add top pad to the main content wrapper */
+  .page-content {
+    padding-top: 2rem !important;
+  }
+}

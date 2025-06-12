@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="assets/css/fontawesome.css" />
  <!-- override for donate/main buttons -->
     <link rel="stylesheet" href="assets/css/donate-btn.css">
+      <script src="assets/js/custom.js"></script>
 
   <!-- Inline Critical Styles -->
   <style>
@@ -196,14 +197,19 @@
   </footer>
 
   <!-- JS (deferred) -->
-  <script src="vendor/jquery/jquery.min.js" defer></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/js/owl.js" defer></script>
-  <script src="assets/js/wow.min.js" defer></script>
-  <script src="assets/js/jquery.nav.js" defer></script>
-  <script src="assets/js/scroll-to.js" defer></script>
-  <script src="assets/js/scrollUp.js" defer></script>
-  <script src="assets/js/templatemo.js" defer></script>
+<!-- jQuery first, then Bootstrap JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- core plugins (must be loaded before custom.js) -->
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/popup.js"></script>
+
+<!-- your custom script -->
+<script src="assets/js/custom.js"></script>
+
 
   <script defer>
     window.addEventListener('load', () => {
