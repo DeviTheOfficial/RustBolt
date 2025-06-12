@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>RustBolt | Downloads</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+     <!-- override for donate/main buttons -->
+    <link rel="stylesheet" href="assets/css/donate-btn.css">
+
+    <!-- Custom outline-box styling, header flash, and sortable table -->
+    <style>
+      .download-box {
+        background-color: #1f2122;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+      .background-header {
+        background-color: #fff;
+        transition: background-color 0.3s ease;
+      }
+      th.sortable {
+        cursor: pointer;
+        user-select: none;
+      }
+      .sort-indicator {
+        font-size: 0.8rem;
+        margin-left: 0.25rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- PRELOADER -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="RustBolt Logo" />
+              </a>
+              <div class="search-input">
+                <form id="search" action="#">
+                  <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" />
+                  <i class="fa fa-search"></i>
+                </form>
+              </div>
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="versions.html" class="active">Downloads</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li class="donate-btn"><a href="donate.html"><i class="fa-regular fa-heart"></i> Donate</a></li>
+              </ul>
+              <a class="menu-trigger"><span>Menu</span></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- DOWNLOADS SECTION -->
+    <section id="downloads" class="pt-0 pb-5">
+      <div class="container">
+        <div class="download-box">
+          <!-- Heading -->
+          <div class="section-heading text-center mb-4">
+            <h2 class="text-light">Downloads</h2>
+            <p class="text-muted">Browse the full archive of RustBolt releases across all platforms.</p>
+          </div>
+
+          <!-- Platform Filters -->
+          <div class="text-center mb-4">
+            <div class="btn-group" role="group" aria-label="Platform selector">
+              <button type="button" class="btn btn-outline-light active" data-filter="all">All</button>
+              <button type="button" class="btn btn-outline-light" data-filter="windows">Windows</button>
+              <button type="button" class="btn btn-outline-light" data-filter="macos">OS X</button>
+              <button type="button" class="btn btn-outline-light" data-filter="linux">Linux</button>
+            </div>
+          </div>
+
+          <!-- Versions Table -->
+          <div class="table-responsive">
+            <table class="table table-hover table-dark mb-0" id="versionTable">
+              <thead class="thead-dark">
+                <tr>
+                  <th class="sortable" data-col="0">
+                    Version <span class="sort-indicator"></span>
+                  </th>
+                  <th>Platform</th>
+                  <th>Release Date</th>
+                  <th>Release Notes</th>
+                  <th>Download</th>
+                </tr>
+              </thead>
+              <tbody id="versionList">
+                <tr data-os="windows">
+                  <td>1000.1.1</td>
+                  <td>Windows</td>
+                  <td>Jun 11, 2025</td>
+                  <td><a href="release-notes/1000.1.1.html">Read</a></td>
+                  <td>
+                    <a href="downloads/windows/1000.1.1.exe" class="btn btn-outline-light btn-sm">Download</a>
+                  </td>
+                </tr>
+                <tr data-os="macos">
+                  <td>1000.1.1</td>
+                  <td>OS X</td>
+                  <td>Jun 11, 2025</td>
+                  <td><a href="release-notes/1000.1.1.html">Read</a></td>
+                  <td>
+                    <a href="downloads/macos/1000.1.1.dmg" class="btn btn-outline-light btn-sm">Download</a>
+                  </td>
+                </tr>
+                <tr data-os="linux">
+                  <td>1000.1.1</td>
+                  <td>Linux</td>
+                  <td>Jun 11, 2025</td>
+                  <td><a href="release-notes/1000.1.1.html">Read</a></td>
+                  <td>
+                    <a href="downloads/linux/1000.1.1.tar.gz" class="btn btn-outline-light btn-sm">Download</a>
+                  </td>
+                </tr>
+                <!-- add more rows here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>&copy; 2026 <a href="https://www.onicatgames.com/">Onicat Games</a> LLC. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/scroll-to.js"></script>
+    <script src="assets/js/scrollUp.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+
+    <script>
+      // Sticky header flash
+      $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop(),
+            h = $('header').outerHeight();
+        $('header').toggleClass('background-header', scroll >= h);
+      });
+
+      // Preloader
+      window.addEventListener('load', function () {
+        document.getElementById('js-preloader').classList.add('loaded');
+      });
+
+      // Platform filter logic
+      document.querySelectorAll('[data-filter]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          document.querySelectorAll('[data-filter]').forEach(function (b) {
+            b.classList.remove('active');
+          });
+          btn.classList.add('active');
+          var filter = btn.getAttribute('data-filter');
+          document.querySelectorAll('#versionList tr').forEach(function (row) {
+            row.style.display = filter === 'all' || row.dataset.os === filter ? '' : 'none';
+          });
+        });
+      });
+
+      // Version sorting
+      (function () {
+        var asc = true;
+        var th = document.querySelector('th.sortable[data-col="0"]'),
+            tbody = document.querySelector('#versionTable tbody'),
+            indicator = th.querySelector('.sort-indicator');
+
+        function parseVer(v) {
+          return v.split('.').map(function (x) { return parseInt(x, 10) || 0; });
+        }
+
+        function cmp(a, b) {
+          for (var i = 0; i < Math.max(a.length, b.length); i++) {
+            if ((a[i] || 0) !== (b[i] || 0)) {
+              return (a[i] || 0) - (b[i] || 0);
+            }
+          }
+          return 0;
+        }
+
+        th.addEventListener('click', function () {
+          var rows = Array.from(tbody.querySelectorAll('tr'));
+          rows.sort(function (r1, r2) {
+            var v1 = parseVer(r1.cells[0].innerText),
+                v2 = parseVer(r2.cells[0].innerText),
+                res = cmp(v1, v2);
+            return asc ? res : -res;
+          });
+          rows.forEach(function (r) { tbody.appendChild(r); });
+          indicator.textContent = asc ? '▲' : '▼';
+          asc = !asc;
+        });
+      })();
+    </script>
+  </body>
+</html>

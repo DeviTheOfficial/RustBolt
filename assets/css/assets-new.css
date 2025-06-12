@@ -1,0 +1,63 @@
+/* /assets/css/assets-new.css */
+
+/* Use the template's main padding for consistency */
+.page-content {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+/* --- New Filter & Featured Box Styling --- */
+.sidebar-box {
+  background-color: #27292a;
+  border-radius: 23px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.sidebar-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.search-form .form-control {
+    background-color: #1f2122;
+    border-color: #1f2122;
+    color: #fff;
+}
+
+.search-form .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(231, 94, 141, 0.25);
+}
+
+.featured-asset img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.featured-asset h5 {
+    font-weight: 600;
+}
+
+.featured-asset p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* --- Re-using previous card styles --- */
+.asset-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.asset-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-color: #e75e8d;
+}
+
+.asset-item.d-none {
+    display: none !important;
+}

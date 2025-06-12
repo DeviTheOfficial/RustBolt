@@ -1,0 +1,59 @@
+/* /assets/css/custom-plus.css */
+
+/* --- Card Enhancements --- */
+.asset-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.asset-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-color: #e7875e;
+}
+
+.asset-card .btn-outline-light {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.asset-card:hover .btn-outline-light {
+  background-color: #e7875e;
+  color: #fff;
+  border-color: #e7875e;
+}
+
+
+/* --- Search and Tab Polish --- */
+.form-control-dark:focus {
+  border-color: #e7875e;
+  box-shadow: 0 0 0 0.25rem rgba(231, 94, 141, 0.25);
+}
+
+.nav-pills .nav-link {
+  transition: background-color 0.2s ease;
+}
+
+.nav-pills .nav-link:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Responsive Card Grid --- */
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Hide assets by default for filtering */
+.asset-item.d-none {
+    display: none !important;
+}
+
+/* Add this to the bottom of /assets/css/custom-plus.css */
+
+/* --- Layout Fix for Sticky Header --- */
+.page-wrapper {
+  /* This value pushes the content down just below the header. */
+  /* Adjust it if your header height changes. */
+  padding-top: 100px; 
+}

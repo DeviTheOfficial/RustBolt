@@ -1,0 +1,15 @@
+/* donate-btn.css - override button colors site-wide */
+
+.donate-btn a,
+.main-button a {
+  background-color: #fd7e14 !important;
+  border-color:    #fd7e14 !important;
+  color:           #28292a      !important;
+}
+
+.donate-btn a:hover,
+.main-button a:hover {
+  background-color: #28292a !important;
+  border-color:    #28292a !important;
+  color:           #fd7e14      !important;
+}

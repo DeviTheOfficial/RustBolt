@@ -1,0 +1,255 @@
+/* /assets/css/donations.css */
+
+/* Left-side heading styles */
+.donation-heading {
+    padding-top: 20px;
+}
+
+.donation-heading h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.donation-heading h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.donation-heading ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.donation-heading ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.donation-heading ul li i {
+    color: #fd7e14; /* theme color */
+    margin-right: 10px;
+}
+
+
+/* Main Donation Box styles */
+.donation-box {
+    background-color: #27292a; /* Slightly lighter than page bg */
+    border-radius: 15px;
+    padding: 25px;
+    height: 100%;
+}
+
+/* Tab button styles */
+.donation-box .nav-pills {
+    background-color: #1f2122;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.donation-box .nav-pills .nav-link {
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.donation-box .nav-pills .nav-link.active {
+    background-color: #c5412b; /* A professional blue */
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.3);
+}
+
+.donation-box .nav-pills .nav-link:not(.active):hover {
+    background-color: #3a3d3e;
+}
+
+
+/* Grid for preset amount buttons */
+.donation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.preset-amount {
+    background-color: transparent;
+    border: 1px solid #4a4a4a;
+    color: #fff;
+    padding: 15px 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.preset-amount:hover {
+    border-color: #c5412b;
+    background-color: rgba(231, 94, 141, 0.1);
+}
+
+.preset-amount.active {
+    background-color: #c5412b;
+    border-color: #c5412b;
+    box-shadow: #c5412b;
+}
+
+
+/* Text above custom donation form */
+.donate-text {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+/* Custom donation form styles */
+.donate-form {
+    display: flex;
+    align-items: center;
+    background-color: #1f2122;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.donate-form .currency-symbol {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 15px;
+    color: #aaa;
+}
+
+.donate-form input[type="number"] {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 5px;
+    width: 50%;
+}
+/* Hides the arrows on number inputs */
+.donate-form input[type=number]::-webkit-inner-spin-button,
+.donate-form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.donate-form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.donate-form .donate-submit-btn {
+    background-color: #c5412b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.donate-form .donate-submit-btn:hover {
+    background-color: #c5412b;
+}
+
+/* Milestone Section Adjustments */
+.most-popular .item img {
+    border-radius: 23px;
+}
+
+.most-popular .item ul li i {
+    margin-right: 5px;
+}
+
+/* /assets/css/donations.css */
+/* Add this to the bottom of your existing file */
+
+/* --- Milestone Section Styles --- */
+.milestones-section {
+    background-color: #1f2122; /* Matches the dark theme */
+    border-radius: 23px;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+.milestones-section .heading-section {
+    margin-bottom: 30px;
+}
+
+.milestone-item {
+    background-color: #27292a; /* Same as donation box */
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+}
+
+.milestone-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.milestone-info h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.milestone-info span {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.status-tag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.status-tag i {
+    margin-right: 8px;
+}
+
+/* Status Colors */
+.status-completed {
+    background-color: rgba(40, 167, 69, 0.2); /* Green */
+    color: #28a745;
+}
+
+.status-in-progress {
+    background-color: rgba(0, 123, 255, 0.2); /* Blue */
+    color: #007bff;
+}
+
+.status-planned {
+    background-color: rgba(108, 117, 125, 0.2); /* Gray */
+    color: #6c757d;
+}
+
+/* Progress Bar Styles */
+.progress {
+    height: 12px;
+    background-color: #1f2122; /* Dark background for the bar track */
+    border-radius: 6px;
+    font-size: 0.75rem;
+}
+
+.progress-bar {
+    background-color: #c5412b; /* Theme pink */
+    font-weight: 600;
+}
+
+.rust-text {
+  color: #c5412b; /* A rust-orange color */
+}
+

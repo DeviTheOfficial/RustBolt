@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>RustBolt | Tutorials</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+  <!-- Google Fonts & Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap & Theme CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+ <!-- override for donate/main buttons -->
+    <link rel="stylesheet" href="assets/css/donate-btn.css">
+
+  <!-- Inline Critical Styles -->
+  <style>
+    .tutorial-box {
+      background-color: #1f2122;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    .tutorial-card {
+      background-color: #2a2c2f;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .tutorial-card:hover { transform: translateY(-5px); }
+    .tutorial-card-body { padding: 1rem; }
+    .tutorial-card-title { margin-bottom: 0.5rem; }
+
+    .video-facade {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .video-facade img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 68px;
+      height: 48px;
+      background-image: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48">\
+<path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55C3.97,2.33,2.27,4.81,1.48,7.74,0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,24,24S67.94,13.05,66.52,7.74z" fill="red"/>\
+<path d="M45,24 27,14 27,34" fill="white"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transition: transform 0.1s ease;
+    }
+    .video-facade:hover .play-button { transform: translate(-50%,-50%) scale(1.1); }
+    .video-facade iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .background-header {
+      background-color: #fff;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="RustBolt Logo" />
+            </a>
+
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" />
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="assets.html">Assets</a></li>
+              <li><a href="versions.html">Downloads</a></li>
+              <li><a href="tutorials.html" class="active">Tutorials</a></li>
+              <li class="donate-btn">
+                <a href="donate.html"><i class="fa-regular fa-heart"></i> Donate</a>
+              </li>
+            </ul>
+
+            <a class="menu-trigger"><span>Menu</span></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Tutorial Archive -->
+  <section id="tutorials" class="pt-0 pb-5">
+    <div class="container">
+      <div class="tutorial-box">
+        <div class="section-heading text-center mb-4">
+          <h2 class="text-light">Tutorial Video Archive</h2>
+          <p class="text-muted">Step-by-step walkthroughs to master RustBolt.</p>
+        </div>
+
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="tutorial-card">
+              <div class="video-facade" data-youtube-id="L_LUpnjgPso">
+                <img src="https://img.youtube.com/vi/L_LUpnjgPso/hqdefault.jpg" alt="" loading="lazy">
+                <div class="play-button"></div>
+              </div>
+              <div class="tutorial-card-body">
+                <h5 class="text-light tutorial-card-title">Getting Started with RustBolt</h5>
+                <p class="text-muted">Learn how to install RustBolt and open your first map.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="tutorial-card">
+              <div class="video-facade" data-youtube-id="3sL0omw_T5M">
+                <img src="https://img.youtube.com/vi/3sL0omw_T5M/hqdefault.jpg" alt="" loading="lazy">
+                <div class="play-button"></div>
+              </div>
+              <div class="tutorial-card-body">
+                <h5 class="text-light tutorial-card-title">Importing & Editing Terrain</h5>
+                <p class="text-muted">See how to import heightmaps and sculpt terrain features.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="tutorial-card">
+              <div class="video-facade" data-youtube-id="qPKi29pT_jA">
+                <img src="https://img.youtube.com/vi/qPKi29pT_jA/hqdefault.jpg" alt="" loading="lazy">
+                <div class="play-button"></div>
+              </div>
+              <div class="tutorial-card-body">
+                <h5 class="text-light tutorial-card-title">Placing and Managing Prefabs</h5>
+                <p class="text-muted">Work with monuments, buildings, and custom prefabs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p>© 2026 <a href="https://www.onicatgames.com/">Onicat Games</a> LLC. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS (deferred) -->
+  <script src="vendor/jquery/jquery.min.js" defer></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/owl.js" defer></script>
+  <script src="assets/js/wow.min.js" defer></script>
+  <script src="assets/js/jquery.nav.js" defer></script>
+  <script src="assets/js/scroll-to.js" defer></script>
+  <script src="assets/js/scrollUp.js" defer></script>
+  <script src="assets/js/templatemo.js" defer></script>
+
+  <script defer>
+    window.addEventListener('load', () => {
+      document.getElementById('js-preloader').classList.add('loaded');
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Sticky header flash
+      const hdr = document.querySelector('header.header-area');
+      const hH = hdr.offsetHeight;
+      window.addEventListener('scroll', () => {
+        hdr.classList.toggle('background-header', window.scrollY >= hH);
+      });
+
+      // Video pop-in
+      document.querySelectorAll('.video-facade').forEach(f => {
+        f.addEventListener('click', function() {
+          const id = this.dataset.youtubeId;
+          const iframe = document.createElement('iframe');
+          iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+          iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+          iframe.allowFullscreen = true;
+          iframe.loading = 'lazy';
+          this.innerHTML = '';
+          this.appendChild(iframe);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
