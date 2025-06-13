@@ -38,10 +38,8 @@
                             <img src="assets/images/logo.png" alt="">
                         </a>
                         <div class="search-input">
-                            <form id="search" action="#">
-                                <input type="text" placeholder="Type Something" id="searchText" name="searchKeyword" />
-                                <i class="fa fa-search"></i>
-                            </form>
+                            
+
                         </div>
                         <ul class="nav">
                             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -60,6 +58,10 @@
             </div>
         </div>
     </header>
+<div id="search-results" class="d-none">
+  <button onclick="closeResults()">✕</button>
+  <ul id="results-list"></ul>
+</div>
 
     <div class="container">
         <div class="row">
@@ -229,5 +231,10 @@
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/tabs.js"></script>
     <script src="assets/js/custom.js"></script>
+    <!-- Lunr core -->
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <!-- Your search logic -->
+  <script src="assets/js/search.js"></script>
+
 </body>
 </html>

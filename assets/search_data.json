@@ -1,0 +1,32 @@
+[
+  {
+    "id": "assets.html",
+    "title": "RustBolt | Assets",
+    "content": "Home Assets Downloads Tutorials Donate Menu ✕ Browse Assets Maps Prefabs Plugins Other Desert Expedition A sprawling map full of hidden tombs and secrets to discover. Download Island Hoppers Leap between floating isles in this fast-paced exploration map. Download Modern House A sleek contemporary prefab with clean lines and open floor plan. Download Bunker Base A fortified underground base ready for any siege scenario. Download AutoTurret AI An AI-driven turret controller for automated defense systems. Download Resource Pack A collection of textures and models for environmental variety. Download Search & Filter Featured Asset Desert Expedition A sprawling map full of hidden tombs and secrets to discover. Download Now Copyright © 2026 Onicat Games LLC. All rights reserved."
+  },
+  {
+    "id": "donate.html",
+    "title": "RustBolt | Donate",
+    "content": "Home Assets Downloads Tutorials Donate Menu ✕ Make RustBolt possible. Every donation counts. Thank you! Support RustBolt developers to work on: Bug fixes and stability 3 major releases a year Donation Milestones Monthly One-time $5 $10 $20 $50 $100 $250 Donate monthly $ Donate $25 $50 $100 $150 $250 $500 Donate, just once $ Donate Donation Milestones UI Polish Target: Q3 2025 Goal Met 100% Terrain Tools Target: Q4 2025 Next Goal 65% Rust.World.SDK Target: Q1 2026 Milestone 0% Community Release Target: Q2 2026 Milestone 0% Copyright © 2026 Onicat Games LLC. All rights reserved."
+  },
+  {
+    "id": "features.html",
+    "title": "RustBolt | Features",
+    "content": "Home Assets Downloads Tutorials Donate Menu ✕ Features Discover what makes RustBolt the ultimate map editing tool for Rust developers. Instant Prefab Import Drag-and-drop any prefab directly into your map for effortless placement. One-click import Automatic asset linking Supports all common prefab formats Learn More Advanced Search & Filter Quickly locate objects, prefabs, and coordinates with powerful filtering tools. Custom tag searches Regex and wildcard support Instant preview results Learn More Real-time Collaboration Work simultaneously with teammates and see edits applied live. Synchronized editing Built-in chat integration Role-based permissions Learn More Version History & Rollback Track every change and restore previous map versions instantly. Unlimited undo/redo Auto-saved snapshots Compare revisions side-by-side Learn More Custom Scripts & Plugins Extend functionality with your own scripts or community plugins. JavaScript API access Plugin marketplace Sandboxed execution Learn More Batch Tools & Templates Save time with batch operations and prebuilt map templates. Bulk property editing Template library One-click apply settings Learn More © 2025 Onicat Games LLC. All rights reserved."
+  },
+  {
+    "id": "index.html",
+    "title": "RustBolt | Home",
+    "content": "Home Assets Downloads Tutorials Donate Menu ✕ Free map and asset editor for the game Rust Support RustBolt developers Donate Latest Features Instant Prefab Import Drag-and-drop any prefab right into your map for instant placement. One-click import Auto snap to terrain Learn More Blueprint Mode Plan your builds in advance with a full-screen blueprint overlay. Ghost preview Share with teammates Learn More UPDATED Live Collaboration Invite friends to edit your map in real time—no plugins required. Multi-user support Built-in chat Learn More All Features Latest Downloads Windows Windows 10+ (x64) Requirements DirectX 11+ Version 1000.1.1 File Size 5 GB Download OS X OS X 10.15+ (x64/arm64) Requirements Metal 1.2+ Version 1000.1.1 File Size 5 GB Coming Soon Linux Ubuntu 20.04+ (x64) Requirements OpenGL 4.5+ Version 1000.1.1 File Size 5 GB Coming Soon All Downloads Copyright © 2026 Onicat Games LLC. All rights reserved."
+  },
+  {
+    "id": "tutorials.html",
+    "title": "RustBolt | Tutorials",
+    "content": "Home Assets Downloads Tutorials Donate Menu ✕ Tutorial Video Archive Step-by-step walkthroughs to master RustBolt. Getting Started with RustBolt Learn how to install RustBolt and open your first map. Importing & Editing Terrain See how to import heightmaps and sculpt terrain features. Placing and Managing Prefabs Work with monuments, buildings, and custom prefabs. © 2026 Onicat Games LLC. All rights reserved."
+  },
+  {
+    "id": "versions.html",
+    "title": "RustBolt | Downloads",
+    "content": "Home Assets Downloads Tutorials Donate Menu ✕ Downloads Browse the full archive of RustBolt releases across all platforms. All Windows OS X Linux Version Platform Release Date Release Notes Download 1000.1.1 Windows Jun 11, 2025 Read Download 1000.1.1 OS X Jun 11, 2025 Read Download 1000.1.1 Linux Jun 11, 2025 Read Download © 2026 Onicat Games LLC. All rights reserved."
+  }
+]
